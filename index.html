@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In md editor Sl website and md editor (sl) youtube channel you can learn web design and graphic design for free. subscribe MD Editor Sl youtube channel and like for the channel videos and visit this vebsite. thank you!">
+    <meta name="keywords" content="md editor sl, webdeesign, graphic design, mathiladinimuthu, mathila, dinimuthu, get web design source codes">
+    <meta name="author" content="Mathila Dinimuthu">
+    <link rel="icon" href="channel logo.png">
+	
+    <title>MD Editor Sl official website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<style>
+
+#modalContainer {
+    background-color:rgba(0, 0, 0, 0.3);
+    position:absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    left:0px;
+    z-index:10000;
+}
+
+#alertBox {
+    position:relative;
+    width:33%;
+    min-height:100px;
+    max-height:400px;
+    margin-top:50px;
+    border:1px solid #fff;
+    background-color:#fff;
+    background-repeat:no-repeat;
+  top:30%;
+}
+
+#modalContainer > #alertBox {
+    position:fixed;
+}
+
+#alertBox h1 {
+    margin:0;
+    font:bold 1em Raleway,arial;
+    background-color:#f97352;
+    color:#FFF;
+    border-bottom:1px solid #f97352;
+    padding:10px 0 10px 5px;
+}
+
+#alertBox p {
+    height:50px;
+    padding-left:5px;
+  padding-top:30px;
+  text-align:center;
+  vertical-align:middle;
+}
+
+#alertBox #closeBtn {
+    display:block;
+    position:relative;
+    margin:10px auto 10px auto;
+    padding:7px;
+    border:0 none;
+    width:70px;
+    text-transform:uppercase;
+    text-align:center;
+    color:#FFF;
+    background-color:#f97352;
+    border-radius: 0px;
+    text-decoration:none;
+  outline:0!important;
+}
+
+/* unrelated styles */
+
+#mContainer {
+    position:relative;
+    width:600px;
+    margin:auto;
+    padding:5px;
+    border-top:2px solid #fff;
+    border-bottom:2px solid #fff;
+}
+
+
+
+code {
+    font-size:1.2em;
+    color:#069;
+}
+
+#credits {
+    position:relative;
+    margin:25px auto 0px auto;
+    width:350px; 
+    font:0.7em verdana;
+    border-top:1px solid #000;
+    border-bottom:1px solid #000;
+    height:90px;
+    padding-top:4px;
+}
+
+#credits img {
+    float:left;
+    margin:5px 10px 5px 0px;
+    border:1px solid #000000;
+    width:80px;
+    height:79px;
+}
+
+.important {
+    background-color:#F5FCC8;
+    padding:2px;
+
+}
+
+@media (max-width: 600px) 
+{
+  #alertBox {
+    position:relative;
+    width:90%;
+  top:30%;
+}
+
+</style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="#">MD Editor Sl</a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+           <li><a href="#">Home</a></li>
+           <li><a href="#" onclick="alert('Sorry this is under construction');>About</a></li>
+           <li><a href="https://www.youtube.com/channel/UCnEQlPYjd7xWYM3_fuPdmxw">Subscribe</a></li>
+           <li><a href="webCode.html">web Coding</a></li>
+           <li><a href="#" alert('Sorry this is under construction');>Contact</a></li>
+	   <li><a href="graphic_design.html">Graphic Design</a></li>
+	   <li><a href="programming.html" >Programming</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <div class="allWebpage" onscroll="scrollElementDisplayNone">
+
+ 
+  	<h1 class="main_title_1">MD Editor Sl Official website</h1>
+
+  	<p class="main_title_2">Subscribe MD Editor Sl YouTube channel for watch next videos</p>
+
+
+	<div class="image-links">
+  		<a href="https://www.youtube.com/channel/UCnEQlPYjd7xWYM3_fuPdmxw" class="button">Subscribe</a>
+  		<a href="webCode.html" class="button">Web Coding</a>
+		<a href="webCode.html" class="button">Programming</a>
+	</div>
+
+
+
+  </div>
+<div >
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu-list");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+      body.classList.add("disabledScroll");
+    }
+    cancelBtn.onclick = ()=>{
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      body.classList.remove("disabledScroll");
+    }
+
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+
+var scrollElement_1 = document.querySelector(.main_title_1)
+
+if onscroll() {
+	this.scrollY > 20 ? scrollElement_1.style.zIndex
+}
+
+
+    
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,314 @@
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, green, red);
+}
+
+
+.navbar{
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+}
+.navbar.sticky{
+  padding: 10px 0;
+  background: #1b1b1b;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.navbar .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.navbar .menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  list-style: none;
+}
+.menu-list li a{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 12.5px 20px;
+}
+.menu-list li a:hover{
+  background: #007bff;
+  border-radius: 10px
+
+}
+.allWebpage{
+  height: 100vh;
+  width: 100%;
+  background: url("spencer-moore_desert-min.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.icon{
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.icon.cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  border: 2px solid #000;
+  background: #EE2A7B;
+}
+.navbar.sticky .icon.cancel-btn{
+  top: 10px;
+}
+
+
+
+
+@media (max-width: 584px) {
+   .allWebpage .main_title_2{
+      margin-top: 300px;
+   }
+}
+@media (max-width: 380px) {
+   .allWebpage .main_title_1{
+      font-size: 35px;
+   }
+   .allWebpage .main_title_2{
+      margin-top: 320px;
+      font-size: 18px;
+   }
+}
+@media (max-width: 380px) {
+   .content .logo a{
+      font-size: 20px;
+   }
+}
+@media (max-width: 288px) {
+   .allWebpage .main_title_1{
+      font-size: 35px;
+      margin-top: 200px;
+   }
+   .allWebpage .main_title_2{
+      font-size: 18px;
+      margin-top: 400px;
+   }
+}
+
+
+
+@media (max-width: 868px) {
+  body.disabledScroll{
+    overflow: hidden;
+  }
+  .icon.hide{
+    background: url(menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .icon{
+    display: block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    z-index: 9;
+  }
+  .icon.cancel-btn{
+    display: none;
+  }
+  .icon.cancel-btn.show{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+  .navbar .menu-list{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: #FBAC00;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 50px));
+    transition: all 0.3s ease;
+  }
+  .navbar.sticky .menu-list{
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 35px));
+  }
+  .navbar .menu-list.active{
+    clip-path: circle(75%);
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+    color: #000;
+  }
+}
+
+
+.graphic-design img{
+	margin-top: 200px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border: 2px solid #000;
+}
+.graphic-design img{
+	width: 30%;
+}
+
+
+
+
+
+
+
+#modalContainer {
+    background-color:rgba(0, 0, 0, 0.3);
+    position:absolute;
+  top:0;
+    width:100%;
+    height:100%;
+    left:0px;
+    z-index:10000;
+}
+
+#alertBox {
+    position:relative;
+    width:33%;
+    min-height:100px;
+    max-height:400px;
+    margin-top:50px;
+    border:1px solid #fff;
+    background-color:#fff;
+    background-repeat:no-repeat;
+    top:30%;
+}
+
+#modalContainer > #alertBox {
+    position:fixed;
+}
+
+#alertBox h1 {
+    margin:0;
+    font:bold 1em Raleway,arial;
+    background-color:#f97352;
+    color:#FFF;
+    border-bottom:1px solid #f97352;
+    padding:10px 0 10px 5px;
+}
+
+#alertBox p {
+    height:50px;
+    padding-left:5px;
+  padding-top:30px;
+  text-align:center;
+  vertical-align:middle;
+}
+
+#alertBox #closeBtn {
+    display:block;
+    position:relative;
+    margin:10px auto 10px auto;
+    padding:7px;
+    border:0 none;
+    width:70px;
+    text-transform:uppercase;
+    text-align:center;
+    color:#FFF;
+    background-color:#f97352;
+    border-radius: 0px;
+    text-decoration:none;
+  outline:0!important;
+}
+
+/* unrelated styles */
+
+#mContainer {
+    position:relative;
+    width:600px;
+    margin:auto;
+    padding:5px;
+    border-top:2px solid #fff;
+    border-bottom:2px solid #fff;
+}
+
+
+
+code {
+    font-size:1.2em;
+    color:#069;
+}
+
+#credits {
+    position:relative;
+    margin:25px auto 0px auto;
+    width:350px; 
+    font:0.7em verdana;
+    border-top:1px solid #000;
+    border-bottom:1px solid #000;
+    height:90px;
+    padding-top:4px;
+}
+
+#credits img {
+    float:left;
+    margin:5px 10px 5px 0px;
+    border:1px solid #000000;
+    width:80px;
+    height:79px;
+}
+
+.important {
+    background-color: #F5FCC8;
+    padding: 2px;
+
+}
+
+@media (max-width: 600px) 
+{
+  #alertBox {
+    position: relative;
+    width: 90%;
+    top: 30%;
+}

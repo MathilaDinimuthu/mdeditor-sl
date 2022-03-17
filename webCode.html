@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Codes-MD Editor Sl</title>
+	<link rel="stylesheet" type="text/css" href="webCode.css">
+	<script type="text/javascript" src="webCode.js"></script>
+	<link rel="icon" href="channel logo.png">
+</head>
+<body>
+
+<div class="allWebpage">
+  <nav class="navbar sticky">
+    <div class="content">
+      <div class="logo"><a href="#">MD Editor Sl</a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="https://www.youtube.com/channel/UCnEQlPYjd7xWYM3_fuPdmxw">Subscribe</a></li>
+        <li><a href="#">web Coding</a></li>
+        <li><a href="#">Contact</a></li>
+	<li><a href="programming.html">programming</a></li>
+
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="responsive_nav-bar-coding"> 
+    <a href="responsive nav bar.html">
+      <img src="thumb.png" class="responsive_nav-bar-coding_img1">
+    </a>
+  </div>
+</div>
+</div>
+
+
+
+	
+
+
+
+
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu-list");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+      body.classList.add("disabledScroll");
+    }
+    cancelBtn.onclick = ()=>{
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      body.classList.remove("disabledScroll");
+    }
+
+    
+
+
+    
+
+  </script>
+
+
+</body>
+</html>
